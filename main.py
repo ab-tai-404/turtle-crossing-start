@@ -8,7 +8,7 @@ screen = Screen()
 screen.listen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
-player =Player()
+player =   Player()
 screen.onkey(fun=player.move, key="Up")
 game_is_on = True
 cars = []
@@ -27,6 +27,6 @@ while game_is_on:
 
 
 
-    i += 1
+    i  += 1
 
 screen.exitonclick()
