@@ -29,7 +29,8 @@ while game_is_on:
     if player.ycor() >= 280 :
         scoreboard.increment_level()
         player.player_to_home()
-
+        for car in cars :
+            car.increment_speed()
     time.sleep(0.1)
     screen.update()
     num_car  += 1
