@@ -6,15 +6,18 @@ from scoreboard import Scoreboard
 
 screen = Screen()
 scoreboard = Scoreboard()
+car = CarManager()
 
 screen.listen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
-screen.onkey(fun=player.move_player, key="Up")
-
 player = Player()
 
-car = CarManager()
+
+screen.onkey(fun=player.move_player, key="Up")
+
+scoreboard.increment_level()
+
 num_car = 0
 
 game_is_on = True
