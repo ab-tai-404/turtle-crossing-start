@@ -5,7 +5,7 @@ FONT_LEVEL =("Courier", 10  , "normal")
 class Scoreboard(Turtle):
     def __init__(self):
         super().__init__()
-        self.level = 0
+        self.level = 1
         self.hideturtle()
         self.color("black")
 

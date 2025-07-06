@@ -10,13 +10,14 @@ scoreboard = Scoreboard()
 screen.listen()
 screen.setup(width=600, height=600)
 screen.tracer(0)
-player = Player()
 screen.onkey(fun=player.move_player, key="Up")
-game_is_on = True
-num_car = 0
+
+player = Player()
 
 car = CarManager()
+num_car = 0
 
+game_is_on = True
 while game_is_on:
     if num_car % (7 - scoreboard.level) == 0   :
         car.create_car()
