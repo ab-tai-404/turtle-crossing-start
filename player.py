@@ -11,7 +11,8 @@ class Player(Turtle):
         self.penup()
         self.setheading(90)
         self.goto(STARTING_POSITION)
-    def move(self):
+
+    def move_player(self):
         self.fd(MOVE_DISTANCE)
 
     def player_to_home(self):
